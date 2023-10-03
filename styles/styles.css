@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    background: url(country-quilt-dark.png);
+    background-size: auto;
+}
+
+#menu a {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* li:hover {
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+} */
+
+a {
+    text-decoration: none;
+}
