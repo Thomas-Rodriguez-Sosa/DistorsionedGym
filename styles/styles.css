@@ -42,6 +42,13 @@ a {
         width: 100% !important;
         text-align: center !important;
     }
+    .imagen-query {
+        border-bottom: 1px;
+        border-bottom-width: 1px solid white !important;
+    }
+    .articulo-query {
+        border: none !important;
+    }
 }
 
 @media (max-width: 768px) {
