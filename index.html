@@ -8,63 +8,188 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Inicio | Distorsioned GYM</title>
 </head>
 <body>
     <header class="container-fluid d-flex justify-content-center bg-danger">
         <p class="text-warning fw-bold mb-0 p-2">
-            <a class="text-warning" href="./pages/planes.html">CONSIGUE 30 DIAS DE PRUEBA REGISTRANDOTE AHORA</a>
+            <a class="text-warning" href="#">CONSIGUE 30 DIAS DE PRUEBA REGISTRANDOTE AHORA</a>
         </p>
     </header>
-    <nav class="navbar navbar-expand-lg bg-black navbar-dark p-2" id="menu">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black p-2" id="menu">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./assets/DG-Logo.jpg" alt="Logo" width="55" height="50" class="d-inline-block align-text-center">
+                <i class="bi bi-hourglass-bottom"></i>
                 <span class="d-inline-flex fw-bold fs-4">Distorsioned</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="./pages/sobre-nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/planes.html">Planes</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Planes
+                        </a>
+                        <ul class="dropdown-menu bg-black">
+                            <li>
+                            <a class="dropdown-item" href="#">Full-Body</a>
+                            </li>
+                            <li>
+                            <a class="dropdown-item" href="#">Upper-Lower</a>
+                            </li>
+                            <li>
+                            <a class="dropdown-item" href="./pages/ppl.html">PPL</a>
+                            </li>
+                        </ul>
+                      </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/suplementos.html">Suplementos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ayuda</a>
+                        <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        <article class="container-fluid d-flex mt-2">
-            <div class="card border-3 border-warning rounded-top" style="width: 20rem;">
-                <img src="./assets/Ronnie-Coleman-vs.-Arnold-Schwarzenegger-FB.webp" class="card-img-top" alt="Ronnie & Arnold">
-                <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h2 class="text-white text-center fw-bold mx-auto" id="bienvenido">Bienvenido a la pagina principal de <span class="text-danger">Distorsioned</span></h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner mt-4 w-100">
+              <div class="carousel-item active item" data-bs-interval="4000">
+                <a href="#"><img src="./assets/PPL.jpg" class="d-block w-100" alt="PusHPullLegs"></a>
+              </div>
+              <div class="carousel-item item">
+                <a href="#"><img src="./assets/UPLW.jpg" class="d-block w-100" alt="Upper-Lower"></a>
+              </div>
+              <div class="carousel-item item">
+                <a href="#"><img src="./assets/ArnoldSplit.jpg" class="d-block w-100" alt="ArnoldSplit"></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <section class="text-center text-white mx-auto text-center w-50 pt-3">
+            <h2 class="p-2 border-bottom border-3">
+                Un Gimnasio enfocado en tu <span class="fw-bold text-danger">futuro</span>
+            </h2>
+            <p class="p-1 fs-5">
+                En nuestro centro de entrenamiento <span class="fw-bold text-danger">Distorsioned</span> nos enfocamos y trabajamos en tu estado fisico para que asi puedas llegar a ser la mejor version de ti mismo.
+            </p>
+          </section>
+
+          <article class="container-fluid overflow-hidden">
+            <div class="row w-100 mx-auto celugrid">
+                <div class="col-lg-6 col-md-12 col-sm-12 my-2 d-flex item-tuki">
+                  <img src="./assets/GymEntrena.jpg" class="border border-3 border-danger-subtle" alt="Press-Inclinado" width="200" height="160">
+                    <div class="text-white">
+                        <h3 class="mt-3 px-3 text-danger fw-bold">Entrenamientos</h3>
+                        <p class="fs-5 px-2">Entrenamos con la mayor intensidad posible.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 my-2 d-flex item-tuki">
+                  <img src="./assets/Dumbells.jpg" class="border border-3 border-danger-subtle" alt="Mancuernas" width="200" height="160">
+                    <div div class="text-white">
+                        <h3 class="mt-3 px-3 text-danger fw-bold">Preparacion</h3>
+                        <p class="fs-5 px-2">Te preparamos para cada situacion.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 my-2 d-flex item-tuki">
+                  <img src="./assets/pressbancaej.jpg" class="border border-3 border-danger-subtle" alt="Press-Banca" width="200" height="160">
+                    <div class="text-white">
+                        <h3 class="mt-3 px-3 text-danger fw-bold">Ambiente</h3>
+                        <p class="fs-5 px-2">Aseguramos que te sientas comodo en nuestro establecimiento.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 my-2 d-flex item-tuki">
+                  <img src="./assets/Aboutus4.jpg" class="border border-3 border-danger-subtle" alt="Press-Banca" width="200" height="160">
+                    <div class="text-white">
+                        <h3 class="mt-3 px-3 text-danger fw-bold">Motivacion</h3>
+                        <p class="fs-5 px-2">Siempre vas a querer entrenar en nuestras instalaciones.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card mx-2 border-3 border-warning rounded-top" style="width: 20rem;">
-                <img src="./assets/Ronnie-Coleman-vs.-Arnold-Schwarzenegger-FB.webp" class="card-img-top rounded" alt="Ronnie & Arnold">
-                <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </article>
+          </article>
     </main>
 
-    <footer>
-
+    <footer class="bg-black text-warning pt-4">
+      <div class="container-fluid">
+        <div class="row p-3">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div>
+              <img class="img-fluid mb-2" src="./assets/DG-Logo.jpg" alt="" height="180" width="220">
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 fw-bold mb-3">Suplementos</p>
+            <div class="mb-2">
+              <a class="text-white text-decoration-none" href="#">Pre-Entreno</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-white text-decoration-none" href="#">Proteina WHEY</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-white text-decoration-none" href="#">Creatina</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-white text-decoration-none" href="#">BCAA</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 fw-bold mb-3">Politicas</p>
+            <div class="mb-2">
+              <a class="text-white" href="#">Terminos & Condiciones</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-white" href="#">Politica de Privacidad</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 fw-bold mb-3">Contacto</p>
+            <div>
+              <p class="text-white text-decoration-underline">
+                <i class="bi bi-house me-2"></i>27 de Abril 739, Córdoba
+              </p>
+            </div>
+            <div>
+              <p class="text-white text-decoration-underline">
+                <i class="bi bi-envelope-at me-2"></i>distorsionedgymconsult@gmail.com
+              </p>
+            <div>
+              <p class="text-white text-decoration-underline">
+                <i class="bi bi-telephone-inbound me-2"></i>351 277 899
+              </p>
+            </div>
+            <div>
+              <p class="text-decoration-underline text-white">
+                <i class="bi bi-twitter me-2"></i>Twitter
+              </p>
+            </div>
+            <div>
+              <p class="text-decoration-underline text-white">
+                <i class="bi bi-instagram me-2"></i>Instagram
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <p class="text-secondary text-center">Todos los derechos reservados © 2023</p>
+        </div>
+      </div>
     </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
