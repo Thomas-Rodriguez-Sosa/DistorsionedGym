@@ -1,0 +1,13 @@
+// Imports
+@import "menu";
+@import "main";
+@import "media-queries";
+@import "variables";
+@import "reset";
+
+  body {
+    font-family: $fuente;
+    background: $background-imagen;
+    background-size: auto;
+    margin-bottom: 10px;
+  }

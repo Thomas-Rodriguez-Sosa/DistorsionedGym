@@ -1,0 +1,26 @@
+@media (max-width: 576px) {
+    .item-tuki {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .celugrid {
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .imagen-query {
+        border-bottom: 1px;
+        border-bottom-width: 1px solid white !important;
+    }
+    .articulo-query {
+        border: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #bienvenido{
+        width: 90% !important;
+    }
+    .carousel-inner {
+        margin-bottom: 0% !important;
+    }
+}
